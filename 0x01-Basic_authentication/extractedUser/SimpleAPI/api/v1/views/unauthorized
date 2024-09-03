@@ -1,0 +1,4 @@
+from flask import abort
+@app.route("/api/v1/unauthorized")
+def get_one_cheese():
+    return abort(401, description="Resource not found")
